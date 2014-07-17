@@ -21,7 +21,7 @@
 import sys
 import argparse
 import logging
-from quantumclient.quantum import client
+from neutronclient.neutron import client
 
 STATE_OK = 0
 STATE_WARNING = 1

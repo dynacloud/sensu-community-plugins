@@ -4,7 +4,7 @@ import os
 import time
 import sys
 import socket
-from quantumclient.v2_0 import client as neutronclient
+from neutronclient.v2_0 import client as neutronclient
 import optparse
 
 
