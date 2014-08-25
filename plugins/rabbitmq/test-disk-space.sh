@@ -9,7 +9,11 @@ test=$(rabbitmqctl status | grep disk_free,)
 test2=${test:12}
 result=${test2//\},/}
 
-if (($limit_result >= $result));
+total_limit_result=$(expr $limit_result + 500000000)
+
+
+
+if (($total_limit_result >= $result));
 then
         echo "NOT OK"
         exit 1
